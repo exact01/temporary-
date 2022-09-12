@@ -1,0 +1,18 @@
+/* libraries */
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+
+/* Body Page Sets*/
+@import url(../blocks/main/main.css);
+
+/* Main Page Sets*/
+@import url(../partials/main/main.css);
+
+/* Login Page Sets*/
+@import url(../partials/login/login.css);
+
+/* Register Page Sets*/
+@import url(../partials/register/register.css);
+
+/* Profile Page Sets*/
+@import url(../partials/profile/profile.css);

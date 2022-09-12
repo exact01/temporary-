@@ -1,0 +1,383 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: #0000;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  max-width: 100%;
+  white-space: normal;
+  padding: 0;
+  display: table;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template, [hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("./fonts/Inter-Regular.woff2") format("woff2"), local("./fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("./fonts/Inter-Black.woff2") format("woff2"), local("./fonts/Inter-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("./fonts/Inter-Medium.woff2") format("woff2"), local("./fonts/Inter-Medium.woff") format("woff");
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+}
+
+.register {
+  margin: auto;
+  display: flex;
+}
+
+.register__container {
+  box-sizing: border-box;
+  width: 340px;
+  border-radius: 12px;
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0 0 6px #00000024;
+}
+
+@media screen and (max-width: 767px) {
+  .register__container {
+    width: 300px;
+  }
+}
+
+.register__welcome {
+  color: #1e1e1e;
+  margin: 50px auto 40px;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.register__form {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.register__fieldset {
+  border: none;
+  outline: none;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 159px;
+  padding: 0;
+  display: flex;
+}
+
+.register__box {
+  width: 280px;
+  flex-direction: column;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.register__box:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .register__box {
+    width: 260px;
+  }
+}
+
+.register__label {
+  color: #999;
+  cursor: pointer;
+  margin: 0 0 6px;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 9px;
+}
+
+.register__input {
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  outline: none;
+  margin: 0;
+  padding: 0 0 6px;
+}
+
+.register__input:focus {
+  border-bottom: 1px solid #3369f3;
+}
+
+.register__input[type="text"], .register__input[type="email"] {
+  color: #000;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+.register__input[type="password"] {
+  color: #ff2f2f;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+.register__form-submit {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  width: 280px;
+  background-color: #3369f3;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 12px 0;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  transition: all .5s;
+}
+
+@media screen and (max-width: 767px) {
+  .register__form-submit {
+    width: 260px;
+  }
+}
+
+.register__form-submit:disabled {
+  color: #3369f3;
+  background-color: #e8e8e8;
+  transition-timing-function: ease-in-out;
+}
+
+.register__form-submit:not([disabled]):hover {
+  background-color: #0349f8;
+}
+
+.register__link {
+  text-align: center;
+  color: #3369f3;
+  cursor: pointer;
+  margin: 0 0 30px;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.register__link:hover {
+  opacity: .5;
+}
+
+.register__span-error {
+  position: relative;
+}
+
+.register__error {
+  color: #ff2f2f;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 8px;
+  position: absolute;
+  bottom: 7px;
+}
+
+.register__error_center {
+  top: 5px;
+  right: 146px;
+}
+
+@media screen and (max-width: 767px) {
+  .register__error_center {
+    right: 126px;
+  }
+}
+
+.register__fieldset_register {
+  margin-bottom: 40px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile__container {
+  flex-direction: row;
+  display: flex;
+}
+
+/*# sourceMappingURL=login.3b8f328d.css.map */
